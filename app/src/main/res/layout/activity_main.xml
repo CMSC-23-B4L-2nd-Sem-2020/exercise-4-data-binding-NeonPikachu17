@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:text="@={slamBook.greeting}"
+                    android:textAlignment="center"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="@={slamBook.Name}"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/nameTitle"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editName"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titleNickname"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nickname" />
+
+                <EditText
+                    android:id="@+id/editNickname"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:ems="10"
+                    android:hint="Enter Nickname"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titleAge"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Age" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Enter Age"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/titleBirthday"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="When is your birthday?" />
+
+                <EditText
+                    android:id="@+id/editDate"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Enter Birthday"
+                    android:inputType="date" />
+
+                <TextView
+                    android:id="@+id/titleCourse"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Course?" />
+
+                <EditText
+                    android:id="@+id/editCourse"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Course"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titlePhone"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:text="Phone Number   " />
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/titleColor"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorite Color" />
+
+                <EditText
+                    android:id="@+id/editColor"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Favorite Color"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titleDream"
+                    style="@style/marginTitle"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:text="What is your Ultimate Dream?" />
+
+                <EditText
+                    android:id="@+id/editDream"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Dream"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titleCrush"
+                    style="@style/marginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who is your Secret Crush?" />
+
+                <EditText
+                    android:id="@+id/editCrush"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Crush"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/titleMsg"
+                    style="@style/marginTitle"
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:text="What is your message to me?" />
+
+                <EditText
+                    android:id="@+id/editMsg"
+                    style="@style/margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/done_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="DONE" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+        <variable
+            name="slamBook"
+            type="com.example.bernabe_exer4_slambook.SlamBook" />
+    </data>
+
+</layout>
