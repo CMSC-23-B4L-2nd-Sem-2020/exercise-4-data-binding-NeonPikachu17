@@ -2,4 +2,22 @@
     <string name="app_name">Slam Book</string>
     <string name="nameTitle">Name</string>
     <string name="hintName">Enter Name</string>
+    <string name="titleNickname">Nickname</string>
+    <string name="hintNickname">Enter Nickname</string>
+    <string name="titleAge">Age</string>
+    <string name="hintAge">Enter Age</string>
+    <string name="titleBirthday">When is your birthday?</string>
+    <string name="hintBirthday">Enter Birthday</string>
+    <string name="titleCourse">What is your Course?</string>
+    <string name="hintCourse">Enter Course</string>
+    <string name="titleNumber">Phone Number</string>
+    <string name="hintNumber">Enter Phone Number</string>
+    <string name="titleColor">Favorite Color</string>
+    <string name="hintColor">Enter Favorite Color</string>
+    <string name="titleDream">What is your Ultimate Dream?</string>
+    <string name="hintDream">Enter Dream</string>
+    <string name="titleCrush">Who is your Secret Crush?</string>
+    <string name="hintCrush">Enter Crush</string>
+    <string name="titleMsg">What is your message to me?</string>
+    <string name="done">DONE</string>
 </resources>

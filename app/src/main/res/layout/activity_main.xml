@@ -25,6 +25,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:fontFamily="@font/biorhyme_extralight"
                     android:gravity="center_horizontal"
                     android:text="@={slamBook.greeting}"
                     android:textAlignment="center"
@@ -36,8 +38,11 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="36sp"
+                    android:ems="10"
+                    android:fontFamily="@font/p5hatty"
                     android:text="@={slamBook.name}"
-                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:textSize="36sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -46,6 +51,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
                     android:text="@={slamBook.nickname}"
                     android:textSize="20sp" />
 
@@ -55,6 +62,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
                     android:text="@={slamBook.age}"
                     android:textSize="20sp" />
 
@@ -64,6 +73,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
                     android:text="@={slamBook.goodbye}"
                     android:textSize="25sp" />
 
@@ -88,7 +99,7 @@
                     style="@style/marginTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nickname" />
+                    android:text="@string/titleNickname" />
 
                 <EditText
                     android:id="@+id/editNickname"
@@ -97,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:ems="10"
-                    android:hint="Enter Nickname"
+                    android:hint="@string/hintNickname"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -107,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
-                    android:text="Age" />
+                    android:text="@string/titleAge" />
 
                 <EditText
                     android:id="@+id/editText4"
@@ -116,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:ems="10"
-                    android:hint="Enter Age"
+                    android:hint="@string/hintAge"
                     android:inputType="number" />
 
                 <TextView
@@ -126,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
-                    android:text="When is your birthday?" />
+                    android:text="@string/titleBirthday" />
 
                 <EditText
                     android:id="@+id/editDate"
@@ -135,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:ems="10"
-                    android:hint="Enter Birthday"
+                    android:hint="@string/hintBirthday"
                     android:inputType="date" />
 
                 <TextView
@@ -143,7 +154,7 @@
                     style="@style/marginTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="What is your Course?" />
+                    android:text="@string/titleCourse" />
 
                 <EditText
                     android:id="@+id/editCourse"
@@ -151,7 +162,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Course"
+                    android:hint="@string/hintCourse"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -162,7 +173,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="16dp"
                     android:ems="10"
-                    android:text="Phone Number   " />
+                    android:text="@string/titleNumber" />
 
                 <EditText
                     android:id="@+id/editPhone"
@@ -171,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:ems="10"
-                    android:hint="Enter Phone Number"
+                    android:hint="@string/hintNumber"
                     android:inputType="phone" />
 
                 <TextView
@@ -179,7 +190,7 @@
                     style="@style/marginTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Favorite Color" />
+                    android:text="@string/titleColor" />
 
                 <EditText
                     android:id="@+id/editColor"
@@ -187,7 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Favorite Color"
+                    android:hint="@string/hintColor"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -195,7 +206,7 @@
                     style="@style/marginTitle"
                     android:layout_width="210dp"
                     android:layout_height="wrap_content"
-                    android:text="What is your Ultimate Dream?" />
+                    android:text="@string/titleDream" />
 
                 <EditText
                     android:id="@+id/editDream"
@@ -203,7 +214,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Dream"
+                    android:hint="@string/hintDream"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -211,7 +222,7 @@
                     style="@style/marginTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Who is your Secret Crush?" />
+                    android:text="@string/titleCrush" />
 
                 <EditText
                     android:id="@+id/editCrush"
@@ -219,7 +230,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Enter Crush"
+                    android:hint="@string/hintCrush"
                     android:inputType="textPersonName" />
 
                 <TextView
@@ -227,7 +238,7 @@
                     style="@style/marginTitle"
                     android:layout_width="206dp"
                     android:layout_height="wrap_content"
-                    android:text="What is your message to me?" />
+                    android:text="@string/titleMsg" />
 
                 <EditText
                     android:id="@+id/editMsg"
@@ -245,7 +256,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="16dp"
-                    android:text="DONE" />
+                    android:text="@string/done" />
 
             </LinearLayout>
         </ScrollView>
