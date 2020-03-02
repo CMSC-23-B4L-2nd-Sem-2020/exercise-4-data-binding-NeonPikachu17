@@ -12,6 +12,7 @@ import com.example.bernabe_exer4_slambook.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    // For data Binding
     private lateinit var binding: ActivityMainBinding
     private val slamBook: SlamBook = SlamBook("Hello!!!")
 
@@ -20,12 +21,13 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.slamBook = slamBook
-        binding.name.visibility = View.GONE
-        binding.nickname.visibility = View.GONE
-        binding.age.visibility = View.GONE
-        binding.goodbye.visibility = View.GONE
-        binding.doneButton.setOnClickListener{
-            setData(it)
+        // For easier access of binding
+        binding.apply{
+            name.visibility = View.GONE
+            nickname.visibility = View.GONE
+            age.visibility = View.GONE
+            goodbye.visibility = View.GONE
+            doneButton.setOnClickListener{ setData(it) }
         }
     }
 
@@ -45,12 +47,15 @@ class MainActivity : AppCompatActivity() {
             slamBook?.message = editMsg.text.toString()
             invalidateAll()
         }
+        // Sets the visibility after setting the data to slamBook
         setVisibility()
-        // Hide the keyboard.
+
+        // Hides the keyboard.
         val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
     }
 
+    // Sets the visibility of the boxes
     private fun setVisibility(){
         binding.apply{
             title.visibility = View.GONE
